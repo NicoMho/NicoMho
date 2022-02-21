@@ -1,0 +1,20 @@
+<html>
+ <head>
+   <title>Nico Mho Portfolio</title> 
+  <link rel=”stylesheet” href=”css/styles.css”>
+ </head>
+ <body>
+   <nav>
+     <ul>
+       <li><a href=”/”>Home</a></li>
+       <li><a href=”/about”>About</a></li>
+       <li><a href=”/resume”>Portfolio</a></li>
+       <li><a href=”/blog”>Contact</a></li>
+     </ul>
+   </nav>
+   <div class=”container”>
+     <div class=”blurb”>
+       <img src="" alt="Mho Productions">
+       <img src="SmallMHOPROD.png">
+       <h1>Nico Mho Portfolio</h1>
+       <p>This is my first page for my personal website!</a></p>
