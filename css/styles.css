@@ -1,12 +1,18 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    max-width: 1200px;
+  margin: auto;
+  background-color: black
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+ 
+    padding: 10px;
     list-style: none;
     font-weight: bold;
+  text align: center;
+  color: white;
+  
 }
 nav ul li, footer ul li {
     display: inline;
@@ -19,25 +25,106 @@ a {
 a:hover {
     text-decoration: underline;
 }
-h1 {
+aside {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  text-align: center;
+  color: #CDA653;
 }
 p {
-    font-size: 1.5em;
+    font-size: 2em;
+  font-weight: bold;
     line-height: 1.4em;
     color: #333;
+  padding: 5px;
+  font-family: 'Avenir','bold';
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+nav{
+  text-align: center;
+}
+p1{
+  position: relative;
+  top: 60px;
+  text-align: left;
+  padding: 5px;
+  font-size: 1.25em;
+    line-height: .5em;
+    color: #CDA653; 
+  font-family: 'Avenir';
+}
+p2{
+  text-align: left;
+  padding: 0px;
+  font-size: 1em;
+    line-height: 1em;
+    color: #333; 
+  font-family: 'Avenir';
+  border: 50px;
+  position: relative;
+  top: 70px;
+}
+p3 {
+  text-align: center;
+  padding: 0px;
+  font-size: 1em;
+    line-height: 1em;
+    color: #333; 
+  font-family: 'Avenir';
+  border: 50px;
+  position: absolute;
+  top: 150px;
+  left: 810px;
+}
+p4 {
+  text-align: center;
+  padding: 0px;
+  font-size: 1em;
+    line-height: 1em;
+    color: #333; 
+  font-family: 'Avenir';
+  border: 100px;
+  position: absolute;
+  top: 550px;
+  right: 420px;
+}
+p5 {
+  font-size: 7em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  text-align: right;
+  color: #CDA653;
+  position: relative;
+  top: 150px;
+  left: 600px
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.image-grid {
+ width: 500px;
+  height: 500px;
+  position: relative;
+  top: -80px;
+  left: 50px;
 }
 
-ul.posts li {
-    list-style: none;
+.image-grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
 }
+
+.image-grid-col-2 {
+  grid-column: span 3;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+  .image-grid {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+  div2 {align: center;
+  }
+  
